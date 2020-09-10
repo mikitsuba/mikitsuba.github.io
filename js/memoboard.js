@@ -49,8 +49,8 @@ $('#new_memo').on('click', function(e) {
     const positionX = e.pageX;
     const positionY = e.pageY;
     const color = 'rgb(255, 251, 179)';
-    const width = '200px';
-    const height = '200px';
+    const width = '250px';
+    const height = '250px';
     createMemo(memoId, positionX, positionY, color, width, height, '', '');
 
     storeMemo(memoId, positionX, positionY, color, width, height, '', '');
@@ -147,10 +147,10 @@ $('#size_small').on('click', function() {
     sizeChange('200px', '200px');
 });
 $('#size_medium').on('click', function() {
-    sizeChange('300px', '300px');
+    sizeChange('250px', '250px');
 });
 $('#size_large').on('click', function() {
-    sizeChange('400px', '400px');
+    sizeChange('300px', '300px');
 });
 
 
