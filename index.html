@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>myMemoBoard</title>
+<script src="js/jquery-2.1.3.min.js"></script>
+<link rel="stylesheet" href="css/reset.css">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body onContextmenu="return false;"> <!-- 通常の右クリックをキャンセル -->
+<header>
+<h1>MemoBoard</h1>
+</header>
+<main>
+    <!-- 右クリックメニューの作成 -->
+    <div class="contextmenu" id="contextmenu">
+      <ul>
+        <li id="new_memo">New Memo</li>
+        <li id="delete_memo">Delete</li>
+        <li id="duplicate_memo">Dupulicate</li>
+        <li id="color">Color</li>
+          <ul class="submenu">
+            <li id="color_yellow">&nbsp;&nbsp;&nbsp;&nbsp;Yellow</li>
+            <li id="color_green">&nbsp;&nbsp;&nbsp;&nbsp;Green</li>
+            <li id="color_pink">&nbsp;&nbsp;&nbsp;&nbsp;Pink</li>
+          </ul>
+        <li id="size">Size</li>
+          <ul class="submenu">
+            <li id="size_small">&nbsp;&nbsp;&nbsp;&nbsp;Small</li>
+            <li id="size_medium">&nbsp;&nbsp;&nbsp;&nbsp;Medium</li>
+            <li id="size_large">&nbsp;&nbsp;&nbsp;&nbsp;Large</li>
+          </ul>
+      </ul>
+    </div>
+</main>
+<script src="js/memoboard.js" charset="utf-8"></script>
+</body>
+</html>
